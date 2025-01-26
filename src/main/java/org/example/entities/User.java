@@ -42,8 +42,10 @@ public class User extends Person{
     @Override
     public String toString() {
         return "User{" +
-                "cardNumber=" + cardNumber +
-                ", borrowFromLibrary=" + borrowFromLibrary +
-                "} " + super.toString();
+                "id=" + getId() +
+                ", name='" + getName() + '\'' +
+                ", surname='" + getSurname() + '\'' +
+                ", cardNumber=" + cardNumber +
+                '}';
     }
 }

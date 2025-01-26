@@ -71,11 +71,13 @@ public class Borrows {
     @Override
     public String toString() {
         return "Borrows{" +
-                "user=" + user +
-                ", borrowItem=" + borrowItem +
+                "id=" + id +
+                ", userId=" + (user != null ? user.getId() : null) +
+                ", itemTitle=" + (borrowItem != null ? borrowItem.getTitle() : null) +
                 ", borrowDate=" + borrowDate +
                 ", expectedReturnDate=" + expectedReturnDate +
                 ", returnDate=" + returnDate +
                 '}';
     }
+
 }
